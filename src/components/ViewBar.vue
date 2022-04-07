@@ -18,7 +18,7 @@
 <script>
 
 export default {
-	name: 'ViewBar',
+	name: "ViewBar",
 	computed: {
 		getActiveProject() {
 			return this.$store.state.activeProject;
@@ -72,27 +72,6 @@ export default {
 				padding: 0.5em 1em;
 				left: 0;
 			}
-
-			&.actions {
-				right: 0;
-				.ico {
-					display: inline-block;
-					padding: 0.5em .5em;
-					cursor: pointer;
-
-					&:first-child {
-						padding-right: 0.5em;
-					}
-
-					&:last-child {
-						padding-left: 0.5em;
-					}
-
-					&:hover {
-						color: lighten(@color-blue, 40%);
-					}
-				}
-			}
 		}
 
 		iframe {
@@ -107,6 +86,27 @@ export default {
 		right: 0;
 		bottom: 0;
 		border: @border-size solid @color-blue;
+	}
+}
+
+.actions {
+	right: 0;
+	.ico {
+		display: inline-block;
+		padding: 0.5em 0.5em;
+		cursor: pointer;
+
+		&:first-child {
+			padding-right: 0.5em;
+		}
+
+		&:last-child {
+			padding-left: 0.5em;
+		}
+
+		&:hover {
+			color: lighten(@color-blue, 40%);
+		}
 	}
 }
 </style>

@@ -6,7 +6,7 @@
 			<span class="keyword">{{ keyword }}</span>
 		</p>
 		<ul>
-			<li v-for="(project, key) in filtered" :key="key" :class="{ selected: project.selected }" @click="updateActiveProject(project)">
+			<li v-for="(project, key) in filtered" :key="key" :class="{ selected: project.selected }" @mouseenter="updateActiveProject(project)">
 				<div>
 					<p class="client">{{ project.client }}</p>
 				</div>
@@ -40,10 +40,12 @@ export default {
 	},
 	methods: {
 		updateActiveProject(project) {
+			if (project == this.lastProject) return;
+
 			this.lastProject.selected = false;
 			project.selected = true;
 			this.lastProject = project;
-			
+
 			this.$store.commit('UPDATE_ACTIVE_PROJECT', project);
 		}
 	},
@@ -92,7 +94,7 @@ export default {
 
 ul {
 	list-style: none;
-	padding: 1em;
+	padding: 0.5em 1em;
 	transition: padding 0.5s cubic-bezier(0.21, 0.74, 0.5, 1);
 
 	li {

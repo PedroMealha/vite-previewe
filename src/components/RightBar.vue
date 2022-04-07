@@ -3,16 +3,24 @@
 		<Button id="close" text="&times;" @click="showBar" />
 
 		<div class="formats" v-for="phase in getActiveProject.phase" :key="phase">
-			<div class="phase">{{ phase.name }}</div>
+			<div class="phase">{{ phaseName(phase) }}</div>
 			<div class="sets" v-for="set in phase.sets" :key="set">
-				<div v-if="set.type === 'IAB'">
-					<div class="set">{{ setString(set) }}</div>
-					<ul class="formats">
+				<div class="container" v-if="set.type === 'IAB'">
+					<div class="set">
+						{{ setName(set) }}
+						<div class="actions">
+							<div class="ico">cached</div>
+							<div class="ico">download</div>
+							<div class="ico">link</div>
+							<div class="ico">open_in_new</div>
+						</div>
+					</div>
+					<ul class="format">
 						<li v-for="format in set.formats" :key="format" @click="handleClick(format, set)" :class="{ selected: format.selected }">{{ format.size }}</li>
 					</ul>
 				</div>
-				<div v-else>
-					<div class="set">{{ setString(set) }}</div>
+				<div class="container" v-else>
+					<div class="set">{{ setName(set) }}</div>
 					<ul class="formats">
 						<li @click="handleClick(format, set)">Upload</li>
 						<li @click="handleClick(format, set)">Preview</li>
@@ -47,7 +55,7 @@ export default {
 			this.lastFormat.selected = false;
 			format.selected = true;
 			this.lastFormat = format;
-			
+
 			this.setActiveSet(set);
 			this.setActiveFormat(format);
 		},
@@ -60,8 +68,11 @@ export default {
 		setURL(url) {
 			url.replace("watch?v=", "v/");
 		},
-		setString(set){
-			return set.name != '' ? `${set.platform} ${set.name}` : `${set.platform} -Unnamed Set-`;
+		phaseName(phase) {
+			return phase.name != '' ? phase.name : `- Unnamed Phase -`;
+		},
+		setName(set) {
+			return set.name != '' ? `${set.platform} ${set.name}` : `${set.platform} - Unnamed Set -`;
 		}
 	},
 	computed: {
@@ -141,30 +152,49 @@ export default {
 		font-weight: 700;
 		padding: 0.5em 0;
 
-		.set {
-			padding: 0.5em;
-			background: lighten(@color-blue, 10%);
+		.container {
+			margin-bottom: 0.5em;
+			.set {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 0.5em;
+				background: lighten(@color-blue, 10%);
+			}
 		}
 	}
 
-	.formats {
+	.format {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	li {
 		width: 100%;
-		margin: 0;
+		padding: 0.5em 0;
+		font-weight: 300;
+		cursor: pointer;
 
-		li {
-			width: 100%;
-			padding: 0.5em 0;
-			font-weight: 300;
-			cursor: pointer;
-
-			&.selected {
-				background: fade(@color-blue, 50%);
-			}
-
-			&:hover {
-				background: fade(@color-blue, 50%);
-			}
+		&.selected {
+			background: fade(@color-blue, 50%);
 		}
+
+		&:hover {
+			background: fade(@color-blue, 50%);
+		}
+	}
+}
+
+.actions {
+	margin-top: 0.2em;
+	margin-left: 0.5em;
+	.ico {
+		padding: 0 0.25em;
+		color: darken(@color-blue, 10%);
+		display: inline-block;
+		cursor: pointer;
 	}
 }
 </style>

@@ -5,12 +5,12 @@
 
 <template>
 	<div class="master-container">
-		<left-bar class="left" />
+		<left-bar class="side-container left" />
 		<div class="center-content">
 			<top-bar />
 			<view-bar />
 		</div>
-		<right-bar class="right" />
+		<right-bar class="side-container right" />
 	</div>
 </template>
 
@@ -43,16 +43,10 @@ export default {
 @color-white: #fff;
 @color-green: #42b983;
 @color-teal: #16c0b0;
+@color-blue: #2c3e50;
 @color-blue-light: #e4f2f4;
 
-#app {
-	font-family: "Roboto", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	font-size: 14px;
-}
+@headerSize: 100px;
 
 html,
 body,
@@ -63,32 +57,63 @@ body,
 	padding: 0;
 	box-sizing: border-box;
 	user-select: none;
-	background-image: linear-gradient(to top, lighten(@color-grey-dark, 2%), @color-grey-dark);
+}
+
+#app {
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	font-size: 14px;
+	color: lighten(@color-blue, 40%);
+	background: @color-grey-dark;
 }
 
 .master-container {
+	position: relative;
 	width: 100%;
 	height: 100%;
 	display: flex;
 }
 
 .center-content {
+	position: relative;
 	width: 100%;
+}
+
+.side-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 250px;
+	width: 100%;
+	overflow: hidden;
+
+	&.left {
+		border-right: 1px solid @color-blue;
+	}
+
+	&.right {
+		border-left: 1px solid @color-blue;
+		padding-top: @headerSize;
+	}
 }
 
 input {
 	display: block;
 	border: none;
 	outline: none;
+	color: lighten(@color-blue, 40%);
+	background: transparent;
+
+	&::placeholder {
+		color: lighten(@color-blue, 40%);
+	}
 }
 
 input[type="text"] {
 	padding: 0px 10px;
-}
-
-input:focus {
-	border-color: #16c0b0;
-	outline: 0;
 }
 
 ul {
@@ -98,6 +123,33 @@ ul {
 }
 
 .ico {
+	display: inline-block;
+	padding: 0 0.25em;
 	font-family: "Material Icons";
+	cursor: pointer;
+}
+
+.border {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	pointer-events: none;
+}
+
+body.light {
+	#app {
+		background: @color-blue-light;
+		color: @color-blue;
+	}
+
+	input {
+		color: @color-grey-dark;
+
+		&::placeholder {
+			color: @color-grey-dark;
+		}
+	}
 }
 </style>

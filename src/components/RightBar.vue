@@ -28,8 +28,6 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="border"></div>
 	</div>
 </template>
 
@@ -94,31 +92,12 @@ export default {
 @button-size: 30px;
 
 .mention-bar {
-	padding-top: 100px;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	max-width: 250px;
-	width: 100%;
-	background: @color-grey-dark;
-	transition: max-width 0.5s cubic-bezier(0.21, 0.74, 0.5, 1);
-	overflow: hidden;
-
 	&.close {
 		max-width: @button-size + 1;
 	}
 }
-
-.border {
-	position: absolute;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 1px;
-	border-left: 1px solid @color-blue;
-	pointer-events: none;
+.ico {
+	color: @color-blue-light;
 }
 
 #close {
@@ -140,8 +119,8 @@ export default {
 
 	.phase {
 		width: 100%;
-		background: lighten(@color-blue, 20%);
-		color: @color-grey-dark;
+		background: lighten(@color-blue, 30%);
+		color: @color-blue-light;
 		padding: 0.5em 0;
 		font-weight: 700;
 		font-size: 1.1em;
@@ -151,6 +130,7 @@ export default {
 		width: 100%;
 		font-weight: 700;
 		padding: 0.5em 0;
+		color: @color-blue-light;
 
 		.container {
 			margin-bottom: 0.5em;
@@ -163,38 +143,59 @@ export default {
 			}
 		}
 	}
+}
+.format {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: lighten(@color-blue, 40%);
+}
 
-	.format {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
+li {
+	width: 100%;
+	padding: 0.5em 0;
+	font-weight: 300;
+	cursor: pointer;
+
+	&.selected {
+		background: fade(@color-blue, 50%);
 	}
 
-	li {
-		width: 100%;
-		padding: 0.5em 0;
-		font-weight: 300;
-		cursor: pointer;
-
-		&.selected {
-			background: fade(@color-blue, 50%);
-		}
-
-		&:hover {
-			background: fade(@color-blue, 50%);
-		}
+	&:hover {
+		background: fade(@color-blue, 50%);
 	}
 }
 
 .actions {
 	margin-top: 0.2em;
 	margin-left: 0.5em;
+}
+
+body.light {
+	.formats {
+		color: lighten(@color-blue, 10%);
+		.phase {
+			color: @color-blue-light;
+			background: darken(@color-blue, 5%);
+		}
+	}
+
+	.format {
+		color: lighten(@color-blue, 10%);
+	}
+
+	li {
+		&:hover {
+			background: darken(@color-blue-light, 10%);
+		}
+
+		&.selected {
+			background: darken(@color-blue-light, 10%);
+		}
+	}
 	.ico {
-		padding: 0 0.25em;
-		color: darken(@color-blue, 10%);
-		display: inline-block;
-		cursor: pointer;
+		color: @color-blue-light;
 	}
 }
 </style>

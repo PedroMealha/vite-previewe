@@ -56,23 +56,8 @@ export default {
 	justify-content: center;
 
 	.focus {
-		background: @color-grey-dark;
+		background: lighten(@color-blue, 30%);
 		position: relative;
-
-		.label {
-			position: absolute;
-			top: @border-size;
-			border: @border-size solid @color-blue;
-			transform: translateY(-100%);
-			background: @color-grey-dark;
-			color: @color-blue-light;
-			font-weight: 700;
-
-			&.format {
-				padding: 0.5em 1em;
-				left: 0;
-			}
-		}
 
 		iframe {
 			display: block;
@@ -86,6 +71,23 @@ export default {
 		right: 0;
 		bottom: 0;
 		border: @border-size solid @color-blue;
+	}
+}
+
+.label {
+	position: absolute;
+	top: @border-size;
+	border: @border-size solid @color-blue;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	transform: translateY(-100%);
+	background: lighten(@color-blue, 10%);
+	font-weight: 700;
+	color: @color-blue-light;
+
+	&.format {
+		padding: 0.5em 1em;
+		left: 0;
 	}
 }
 

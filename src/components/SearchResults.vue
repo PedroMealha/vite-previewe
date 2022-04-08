@@ -5,13 +5,13 @@
 			No results for
 			<span class="keyword">{{ keyword }}</span>
 		</p>
-		<ul>
+		<ul class="card">
 			<li v-for="(project, key) in filtered" :key="key" :class="{ selected: project.selected }" @mouseenter="updateActiveProject(project)">
-				<div>
-					<p class="client">{{ project.client }}</p>
+				<div class="client">
+					<p>{{ project.client }}</p>
 				</div>
 				<div class="info">
-					<transition name="slide-fade" mode="out-in">
+					<transition name="slide-fade">
 						<div v-if="project.selected">
 							<p class="brand">{{ project.brand }}</p>
 							<p class="campaign">{{ project.campaign }}</p>
@@ -79,23 +79,18 @@ export default {
 @color-blue: #2c3e50;
 @color-blue-light: #e4f2f4;
 
-.close ul {
-	padding: 1em 0;
-}
-
 .results {
 	width: 100%;
-
-	.keyword {
-		color: @color-blue;
-		font-weight: 700;
-	}
 }
 
-ul {
+.keyword {
+	color: @color-blue;
+	font-weight: 700;
+}
+
+.card {
 	list-style: none;
 	padding: 0.5em 1em;
-	transition: padding 0.5s cubic-bezier(0.21, 0.74, 0.5, 1);
 
 	li {
 		display: flex;
@@ -103,43 +98,60 @@ ul {
 		align-items: center;
 		flex-direction: column;
 		margin: 0.5em 0;
-		padding: 1em;
 		border: 1px solid @color-blue;
 		text-transform: capitalize;
 		cursor: pointer;
+
+		&:hover {
+			background: fade(@color-blue, 50%);
+		}
 
 		&.selected {
 			background: fade(@color-blue, 50%);
 		}
 
+		.client {
+			background: lighten(@color-blue, 10%);
+			font-weight: 700;
+			width: 100%;
+			padding: 0.5em 0;
+		color: @color-blue-light;
+		}
+
 		p {
 			margin: 0;
 			padding: 0.25em 0;
-
-			&.client {
-				color: @color-blue-light;
-				font-weight: 700;
-			}
 		}
 
 		.info {
 			overflow: hidden;
 			color: lighten(@color-blue, 40%);
-		}
 
+			> div {
+				padding: 0.5em 0;
+			}
+		}
+	}
+}
+
+body.light {
+	.card li {
 		&:hover {
 			background: fade(@color-blue, 50%);
+		}
 
-			&.selected {
-				background: fade(@color-blue, 20%);
-			}
+		&.selected {
+			background: darken(@color-blue-light, 10%);
+		}
+		.info {
+			color: lighten(@color-blue, 10%);
 		}
 	}
 }
 
 .slide-fade-enter-active,
 .slide-fade-leave-active {
-	transition: all 0.3s cubic-bezier(0.32, 0.43, 0.5, 0.7);
+	transition: margin-top 0.3s cubic-bezier(0.32, 0.43, 0.5, 0.7);
 }
 
 .slide-fade-enter-from,

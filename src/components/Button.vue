@@ -2,6 +2,18 @@
 	<button>{{ text }}</button>
 </template>
 
+
+<script>
+export default {
+	props: {
+		text: {
+			type: String,
+			required: true
+		}
+	}
+}
+</script>
+
 <style lang="less" scoped>
 @color-magenta: #c34efd;
 @color-grey-dark: #111;
@@ -17,25 +29,22 @@ button {
 	align-items: center;
 	font-size: 1em;
 	border: none;
-	color: @color-blue-light;
+	color: lighten(@color-blue, 40%);
 	background: transparent;
-	transition: all 0.3s ease-out;
 	cursor: pointer;
 }
 
 button:hover {
-	color: #42b983;
+	color: lighten(@color-blue, 60%)
 }
-</style>
 
+body.light {
+	button {
+		color: @color-grey-dark;
+	}
 
-<script>
-export default {
-	props: {
-		text: {
-			type: String,
-			required: true
-		}
+	button:hover {
+	color: lighten(@color-grey-dark, 40%)
 	}
 }
-</script>
+</style>

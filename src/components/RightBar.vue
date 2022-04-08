@@ -1,16 +1,13 @@
 <template>
 	<div class="mention-bar" :class="{ close: isClosed }">
-		<div class="formats" v-for="phase in getActiveProject.phase" :key="phase">
+		<div class="formats" v-for="phase in activeProject.phase" :key="phase">
 			<div class="phase">{{ phaseName(phase) }}</div>
 			<div class="sets" v-for="set in phase.sets" :key="set">
 				<div class="container" v-if="set.type === 'IAB'">
 					<div class="set">
 						{{ setName(set) }}
 						<div class="actions">
-							<div class="ico">cached</div>
-							<div class="ico">download</div>
-							<div class="ico">link</div>
-							<div class="ico">open_in_new</div>
+							<Actions />
 						</div>
 					</div>
 					<ul class="format">
@@ -33,11 +30,14 @@
 
 <script>
 import Button from './Button.vue'
+import Actions from './Actions.vue'
+import { mapState } from 'vuex'
 
 export default {
 	name: 'RightBar',
 	components: {
-		Button
+		Button,
+		Actions
 	},
 	data() {
 		return {
@@ -56,15 +56,14 @@ export default {
 
 			this.setActiveSet(set);
 			this.setActiveFormat(format);
+
+			this.$store.commit('IFRAME_LOADED', false);
 		},
 		setActiveFormat(format) {
 			this.$store.commit('UPDATE_ACTIVE_FORMAT', format);
 		},
 		setActiveSet(set) {
 			this.$store.commit('UPDATE_ACTIVE_SET', set);
-		},
-		setURL(url) {
-			url.replace("watch?v=", "v/");
 		},
 		phaseName(phase) {
 			return phase.name != '' ? phase.name : `- Unnamed Phase -`;
@@ -74,9 +73,7 @@ export default {
 		}
 	},
 	computed: {
-		getActiveProject() {
-			return this.$store.state.activeProject;
-		}
+		...mapState(['activeProject'])
 	}
 }
 </script>
@@ -102,9 +99,6 @@ export default {
 			opacity: 0;
 		}
 	}
-}
-.ico {
-	color: @color-blue-light;
 }
 
 #close {
@@ -142,8 +136,9 @@ export default {
 			margin-bottom: 0.5em;
 			.set {
 				display: flex;
-				justify-content: center;
+				flex-wrap: wrap;
 				align-items: center;
+				justify-content: center;
 				padding: 0.5em;
 				background: lighten(@color-blue, 10%);
 			}
@@ -175,7 +170,6 @@ li {
 
 .actions {
 	margin-top: 0.2em;
-	margin-left: 0.5em;
 }
 
 body.light {

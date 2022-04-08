@@ -6,6 +6,7 @@ export default createStore({
 		activeProject: {},
 		activeFormat: null,
 		activeSet: null,
+		iframeLoaded: false,
 		projects: []
 	},
 	// commi and track state changes
@@ -21,6 +22,9 @@ export default createStore({
 		},
 		SET_PROJECTS(state, projects) {
 			state.projects = projects;
+		},
+		IFRAME_LOADED(state, status) {
+			state.iframeLoaded = status;
 		},
 	},
 	// equi to methods which update data

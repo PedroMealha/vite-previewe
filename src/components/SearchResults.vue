@@ -6,7 +6,7 @@
 			<span class="keyword">{{ keyword }}</span>
 		</p>
 		<ul class="card">
-			<li v-for="(project, key) in filtered" :key="key" :class="{ selected: project.selected }" @mouseenter="updateActiveProject(project)">
+			<li v-for="(project, key) in filtered" :key="key" :class="{ selected: project.selected }" @click="updateActiveProject(project)">
 				<div class="client">
 					<p>{{ project.client }}</p>
 				</div>
@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 
 export default {
 	data() {
@@ -49,13 +50,8 @@ export default {
 			this.$store.commit('UPDATE_ACTIVE_PROJECT', project);
 		}
 	},
-	created() {
-		this.projects = this.$store.getters.projects;
-	},
 	computed: {
-		projects() {
-			return this.$store.getters.projects
-		},
+		...mapState(['projects']),
 		filtered() {
 			return this.projects.filter(p => {
 				for (const val of Object.values(p)) {
@@ -111,6 +107,8 @@ export default {
 		}
 
 		.client {
+			display: flex;
+			justify-content: center;
 			background: lighten(@color-blue, 10%);
 			width: 100%;
 			padding: 0.5em 0;

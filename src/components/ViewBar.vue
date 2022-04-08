@@ -1,36 +1,44 @@
 <template>
-	<div class="view-bar" v-if="getActiveFormat">
-		<div class="focus" v-if="getActiveSet.type == 'IAB'">
-			<iframe :src="getActiveFormat.url" frameborder="0" :style="{ width: size.w + 'px', height: size.h + 'px' }"></iframe>
+	<div class="view-bar" v-if="activeFormat">
+		<div class="focus" v-if="activeSet.type == 'IAB'">
+			<div class="loading">
+				<div class="ico" :class="{ on: !iframeLoaded }" :style="{ opacity: iframeLoaded ? 0 : 1 }">autorenew</div>
+			</div>
+			<iframe :src="activeFormat.url" frameborder="0" style="top:50px; left:50px;" :style="{ width: size.w + 'px', height: size.h + 'px', opacity: iframeLoaded ? 1 : 0 }" @load="loadIframe"></iframe>
 			<div class="border"></div>
-			<div class="format label">{{ getActiveFormat.size }}</div>
-			<div class="actions label">
-				<div class="ico">cached</div>
-				<div class="ico">download</div>
-				<div class="ico">link</div>
-				<div class="ico">open_in_new</div>
+			<div class="format label">
+				{{ activeFormat.size }}
+				<div class="actions">
+					<Actions />
+				</div>
 			</div>
 		</div>
-		<iframe v-else :src="getActiveSet.preview" frameborder="0" style="width: 100%; height:100%;"></iframe>
+		<div class="focus" v-else>
+			<iframe :src="activeSet.preview" frameborder="0" style="width: 100%; height:100%;"></iframe>
+		</div>
 	</div>
 </template>
 
 <script>
+import Actions from './Actions.vue'
+import { mapState } from 'vuex'
 
 export default {
 	name: "ViewBar",
+	components: {
+		Actions
+	},
+	methods: {
+		loadIframe() {
+			this.$store.commit('IFRAME_LOADED', true);
+		}
+	},
 	computed: {
-		getActiveProject() {
-			return this.$store.state.activeProject;
-		},
-		getActiveFormat() {
-			return this.$store.state.activeFormat;
-		},
-		getActiveSet() {
-			return this.$store.state.activeSet;
-		},
+		...mapState(['activeFormat']),
+		...mapState(['activeSet']),
+		...mapState(['iframeLoaded']),
 		size() {
-			let split = this.getActiveFormat.size.split("x");
+			let split = this.activeFormat.size.split("x");
 			return {
 				w: split[0],
 				h: split[1],
@@ -56,59 +64,59 @@ export default {
 	justify-content: center;
 
 	.focus {
-		background: lighten(@color-blue, 30%);
 		position: relative;
 
 		iframe {
 			display: block;
 		}
+
+		.loading {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			.ico {
+				font-size: 2em;
+
+				&.on {
+					animation: loading 2s infinite linear;
+
+					@keyframes loading {
+						from {
+							transform: rotate(0deg);
+						}
+						to {
+							transform: rotate(360deg);
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.border {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
 		border: @border-size solid @color-blue;
 	}
 }
 
 .label {
 	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 	top: @border-size;
+	padding: 0.5em;
 	border: @border-size solid @color-blue;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	transform: translateY(-100%);
 	background: lighten(@color-blue, 10%);
-	font-weight: 700;
 	color: @color-blue-light;
-
-	&.format {
-		padding: 0.5em 1em;
-		left: 0;
-	}
+	transform: translateY(-100%);
 }
 
 .actions {
-	right: 0;
-	.ico {
-		display: inline-block;
-		padding: 0.5em 0.5em;
-		cursor: pointer;
-
-		&:first-child {
-			padding-right: 0.5em;
-		}
-
-		&:last-child {
-			padding-left: 0.5em;
-		}
-
-		&:hover {
-			color: lighten(@color-blue, 40%);
-		}
-	}
+	margin-top: 0.2em;
 }
 </style>

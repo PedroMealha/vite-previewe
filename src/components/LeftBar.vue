@@ -84,7 +84,7 @@ export default {
 	text-align: left;
 	align-self: flex-end;
 	width: 100%;
-	padding: 0 0.25em;
+	padding: 0 0.5em;
 
 	input {
 		width: 100%;

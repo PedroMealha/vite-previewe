@@ -127,6 +127,10 @@ ul {
 	padding: 0 0.25em;
 	font-family: "Material Icons";
 	cursor: pointer;
+	
+	&:hover {
+		color: lighten(@color-blue, 40%);
+	}
 }
 
 .border {

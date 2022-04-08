@@ -26,7 +26,12 @@
 				<span>MAINBRAIN</span>PREVIEW STAGE
 			</div>
 		</div>
-		<div class="version">{{ version }}</div>
+	</div>
+	<div id="switch" @click="toggleSwitch">
+		<div class="border"></div>
+		<div class="btn">
+			<div class="light"></div>
+		</div>
 	</div>
 </template>
 
@@ -34,6 +39,11 @@
 
 export default {
 	name: 'TopBar',
+	methods: {
+		toggleSwitch() {
+			document.querySelector('body').classList.toggle('light');
+		}
+	},
 	computed: {
 		getActiveProject() {
 			return this.$store.state.activeProject;
@@ -41,6 +51,10 @@ export default {
 		getActiveFormat() {
 			return this.$store.state.activeFormat;
 		}
+	},
+	created() {
+		let lightheme = window.matchMedia("(prefers-color-scheme: light)").matches;
+		if (lightheme) document.querySelector("body").classList.add('light');
 	}
 }
 </script>
@@ -63,6 +77,7 @@ export default {
 	background: @color-grey-dark;
 	flex-grow: 0;
 	border-bottom: 1px solid @color-blue;
+	transition: all @transitionSpeed cubic-bezier(0.21, 0.74, 0.5, 1);
 
 	.name {
 		padding-top: 20px;
@@ -101,6 +116,8 @@ export default {
 	align-items: center;
 	justify-content: space-evenly;
 	height: 100%;
+	color: @color-white;
+	transition: color @transitionSpeed cubic-bezier(0.21, 0.74, 0.5, 1);
 
 	.logo {
 		width: 60px;
@@ -116,6 +133,77 @@ export default {
 			font-weight: 700;
 			color: @color-magenta;
 			padding: 0 0.2em;
+		}
+	}
+}
+
+@switchWidth: 60px;
+@borderSize: @switchWidth * 0.025;
+@lightSize: @switchWidth * 0.5 - @borderSize * 4;
+@transitionSpeed: 1s;
+
+#switch {
+	position: absolute;
+	top: 1em;
+	width: @switchWidth;
+	height: @switchWidth * 0.5;
+	position: relative;
+	border-radius: @switchWidth;
+	overflow: hidden;
+	background: @color-white;
+	transition: background @transitionSpeed cubic-bezier(0.21, 0.74, 0.5, 1);
+	cursor: pointer;
+
+	.border {
+		position: absolute;
+		top: @borderSize;
+		left: @borderSize;
+		right: @borderSize;
+		bottom: @borderSize;
+		border-radius: @switchWidth;
+		background: @color-grey-dark;
+		transition: background @transitionSpeed cubic-bezier(0.21, 0.74, 0.5, 1);
+	}
+
+	.btn {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		.light {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: @borderSize * 2;
+			width: @lightSize;
+			height: @lightSize;
+			border-radius: 50%;
+			background: @color-white;
+			transition: all @transitionSpeed cubic-bezier(0.21, 0.74, 0.5, 1);
+		}
+	}
+}
+
+body.light {
+	.client {
+		background: @color-blue-light;
+	}
+
+	.welcome {
+		color: @color-blue;
+	}
+
+	#switch {
+		background: @color-grey-dark;
+
+		.border {
+			background: @color-white;
+		}
+		.btn {
+			.light {
+				background: @color-grey-dark;
+				transform: translate(@switchWidth - @lightSize - @borderSize * 4, -50%);
+			}
 		}
 	}
 }

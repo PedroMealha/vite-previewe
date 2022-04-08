@@ -1,13 +1,14 @@
 <template>
 	<div class="search-bar" :class="{ close: isClosed }">
-		<Button id="close" text="&times;" @click="showBar" />
-		<div id="search" @click="showBar($event, true)">
+		<div id="search">
 			<div class="search-container">
 				<span class="ico">search</span>
 				<input type="search" placeholder="Search client / project..." v-model="keyword" />
 			</div>
 		</div>
 		<search-results :keyword="keyword" />
+
+		<Button id="close" text="&times;" @click="showBar" />
 	</div>
 </template>
 
@@ -28,10 +29,8 @@ export default {
 		}
 	},
 	methods: {
-		showBar(e, closed) {
-			closed ?
-				this.isClosed = false :
-				this.isClosed = !this.isClosed;
+		showBar() {
+			this.isClosed = !this.isClosed;
 		}
 	}
 }
@@ -47,10 +46,16 @@ export default {
 @color-blue-light: #e4f2f4;
 
 @button-size: 28px;
+@maxWidth: 250px;
 
 .search-bar {
+	max-width: @maxWidth;
 	&.close {
-		max-width: @button-size + 1;
+		margin-left: -@maxWidth + @button-size + 1;
+
+		#search, .results {
+			opacity: 0;
+		}
 	}
 }
 .ico {

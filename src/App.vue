@@ -67,6 +67,7 @@ body,
 	font-size: 14px;
 	color: lighten(@color-blue, 40%);
 	background: @color-grey-dark;
+	overflow: hidden;
 }
 
 .master-container {
@@ -86,7 +87,6 @@ body,
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 250px;
 	width: 100%;
 	overflow: hidden;
 

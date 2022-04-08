@@ -1,6 +1,6 @@
 <template>
 	<!-- <div class="results" v-if="projects && keyword != ''"> -->
-	<div class="results" v-if="projects && keyword != ''">
+	<div class="results" v-if="projects && keyword !== ''">
 		<p v-if="filtered.length == 0">
 			No results for
 			<span class="keyword">{{ keyword }}</span>
@@ -84,7 +84,7 @@ export default {
 }
 
 .keyword {
-	color: @color-blue;
+	color: lighten(@color-blue, 60%);
 	font-weight: 700;
 }
 
@@ -112,10 +112,9 @@ export default {
 
 		.client {
 			background: lighten(@color-blue, 10%);
-			font-weight: 700;
 			width: 100%;
 			padding: 0.5em 0;
-		color: @color-blue-light;
+			color: @color-blue-light;
 		}
 
 		p {
@@ -135,6 +134,9 @@ export default {
 }
 
 body.light {
+	.keyword {
+		color: @color-blue;
+	}
 	.card li {
 		&:hover {
 			background: fade(@color-blue, 50%);

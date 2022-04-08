@@ -1,7 +1,5 @@
 <template>
 	<div class="mention-bar" :class="{ close: isClosed }">
-		<Button id="close" text="&times;" @click="showBar" />
-
 		<div class="formats" v-for="phase in getActiveProject.phase" :key="phase">
 			<div class="phase">{{ phaseName(phase) }}</div>
 			<div class="sets" v-for="set in phase.sets" :key="set">
@@ -28,6 +26,8 @@
 				</div>
 			</div>
 		</div>
+
+		<Button id="close" text="&times;" @click="showBar" />
 	</div>
 </template>
 
@@ -89,11 +89,18 @@ export default {
 @color-teal: #16c0b0;
 @color-blue: #2c3e50;
 @color-blue-light: #e4f2f4;
+
 @button-size: 30px;
+@maxWidth: 250px;
 
 .mention-bar {
+	max-width: @maxWidth;
 	&.close {
-		max-width: @button-size + 1;
+		margin-right: -@maxWidth + @button-size + 1;
+
+		.formats {
+			opacity: 0;
+		}
 	}
 }
 .ico {
@@ -128,7 +135,6 @@ export default {
 
 	.sets {
 		width: 100%;
-		font-weight: 700;
 		padding: 0.5em 0;
 		color: @color-blue-light;
 

@@ -34,9 +34,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapState(['activeFormat']),
-		...mapState(['activeSet']),
-		...mapState(['iframeLoaded']),
+		...mapState(['activeFormat', 'activeSet', 'iframeLoaded']),
 		size() {
 			let split = this.activeFormat.size.split("x");
 			return {

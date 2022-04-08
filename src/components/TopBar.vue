@@ -48,8 +48,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapState(['activeProject']),
-		...mapState(['activeFormat']),
+		...mapState(['activeProject', 'activeFormat']),
 	},
 	created() {
 		let lightheme = window.matchMedia("(prefers-color-scheme: light)").matches;

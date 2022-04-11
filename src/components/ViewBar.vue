@@ -1,22 +1,18 @@
 <template>
-	<div class="view-bar" v-if="activeFormat">
-		<div class="focus" v-if="activeSet.type == 'IAB'">
-			<div class="loading">
-				<div class="ico" :class="{ on: !iframeLoaded }" :style="{ opacity: iframeLoaded ? 0 : 1 }">autorenew</div>
-			</div>
-			<iframe :src="activeFormat.url" frameborder="0" style="top:50px; left:50px;" :style="{ width: size.w + 'px', height: size.h + 'px', opacity: iframeLoaded ? 1 : 0 }" @load="loadIframe"></iframe>
-			<div class="border"></div>
-			<div class="format label">
-				{{ activeFormat.size }}
-				<div class="actions">
-					<Actions />
-				</div>
-			</div>
+	<div class="focus" v-if="activeFormat && activeSet.type == 'IAB'" :style="{ width: size.w + 'px', height: size.h + 'px' }">
+		<div class="loading">
+			<div class="ico" :class="{ on: !iframeLoaded }" :style="{ opacity: iframeLoaded ? 0 : 1 }">autorenew</div>
 		</div>
-		<div class="focus" v-else>
-			<iframe :src="activeSet.preview" frameborder="0" style="width: 100%; height:100%;"></iframe>
+		<iframe :src="activeFormat.url" frameborder="0" :style="{ opacity: iframeLoaded ? 1 : 0 }" @load="loadIframe"></iframe>
+		<div class="border"></div>
+		<div class="format label">
+			{{ activeFormat.size }}
+			<div class="actions">
+				<Actions />
+			</div>
 		</div>
 	</div>
+	<iframe v-else-if="activeSet" :src="activeSet.preview" frameborder="0"></iframe>
 </template>
 
 <script>
@@ -55,47 +51,46 @@ export default {
 @color-blue: #2c3e50;
 @color-blue-light: #e4f2f4;
 @border-size: 1px;
-.view-bar {
-	margin-top: 100px;
-	width: 100%;
+
+.focus {
 	display: flex;
-	justify-content: center;
+	margin-top: 100px;
+	position: relative;
 
-	.focus {
-		position: relative;
+	.loading {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 
-		iframe {
-			display: block;
-		}
+		.ico {
+			font-size: 2em;
 
-		.loading {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+			&.on {
+				animation: loading 2s infinite linear;
 
-			.ico {
-				font-size: 2em;
+				@keyframes loading {
+					from {
+						transform: rotate(0deg);
+					}
 
-				&.on {
-					animation: loading 2s infinite linear;
-
-					@keyframes loading {
-						from {
-							transform: rotate(0deg);
-						}
-						to {
-							transform: rotate(360deg);
-						}
+					to {
+						transform: rotate(360deg);
 					}
 				}
 			}
 		}
 	}
+}
 
-	.border {
-		border: @border-size solid @color-blue;
-	}
+iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.border {
+	border: @border-size solid @color-blue;
 }
 
 .label {
@@ -114,7 +109,10 @@ export default {
 	transform: translateY(-100%);
 }
 
-.actions {
-	margin-top: 0.2em;
+.richmedia {
+	&.view-bar {
+		margin-top: 0;
+		height: 100%;
+	}
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<div class="header">
-		<div class="client" v-if="getactiveFormat">
+		<div class="client" v-if="activeProject.client">
 			<div class="name">{{ activeProject.client }}</div>
 			<div class="info">
 				<div class="project-bar">
@@ -48,7 +48,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapState(['activeProject', 'activeFormat']),
+		...mapState(['activeProject']),
 	},
 	created() {
 		let lightheme = window.matchMedia("(prefers-color-scheme: light)").matches;
@@ -73,10 +73,12 @@ export default {
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
+	width: 100%;
 	flex-grow: 0;
 	height: @headerSize;
 	border-bottom: 1px solid @color-blue;
 }
+
 .welcome {
 	display: flex;
 	flex-direction: column;
@@ -86,6 +88,7 @@ export default {
 
 	.logo {
 		width: 60px;
+
 		path {
 			fill: @color-white;
 		}
@@ -113,10 +116,12 @@ export default {
 		color: @color-blue-light;
 		font-weight: 700;
 	}
+
 	.info {
 		width: 100%;
 		font-size: 0.9em;
 		color: lighten(@color-blue, 40%);
+
 		.project-bar {
 			width: 100%;
 			display: flex;
@@ -210,6 +215,7 @@ body.light {
 		.border {
 			background: @color-blue-light;
 		}
+
 		.btn {
 			.light {
 				transform: translate(@switchWidth - @lightSize - @borderSize * 4, -50%);

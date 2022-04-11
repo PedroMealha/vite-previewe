@@ -79,6 +79,9 @@ body,
 
 .center-content {
 	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	width: 100%;
 }
 
@@ -127,7 +130,7 @@ ul {
 	padding: 0 0.25em;
 	font-family: "Material Icons";
 	cursor: pointer;
-	
+
 	&:hover {
 		color: lighten(@color-blue, 40%);
 	}

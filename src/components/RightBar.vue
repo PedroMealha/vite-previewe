@@ -11,14 +11,20 @@
 						</div>
 					</div>
 					<ul class="format">
-						<li v-for="format in set.formats" :key="format" @click="handleClick(format, set)" :class="{ selected: format.selected }">{{ format.size }}</li>
+						<li v-for="format in set.formats" :key="format" @click="handleClick($event, format, set)">{{ format.size }}</li>
 					</ul>
 				</div>
 				<div class="container" v-else>
 					<div class="set">{{ setName(set) }}</div>
-					<ul class="formats">
-						<li @click="handleClick(format, set)">Upload</li>
-						<li @click="handleClick(format, set)">Preview</li>
+					<ul class="format">
+						<li @click="openExternal($event, set.upload, set)">
+							Upload
+							<span class="ico">link</span>
+						</li>
+						<li @click="openExternal($event, set.preview, set)">
+							Preview
+							<span class="ico">link</span>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -42,22 +48,32 @@ export default {
 	data() {
 		return {
 			isClosed: false,
-			lastFormat: {}
+			lastSelected: null
 		}
 	},
 	methods: {
 		showBar() {
 			this.isClosed = !this.isClosed;
 		},
-		handleClick(format, set) {
-			this.lastFormat.selected = false;
-			format.selected = true;
-			this.lastFormat = format;
+		handleClick(e, format, set) {
+			if (this.lastSelected)
+				this.lastSelected.classList.remove('selected');
+			e.target.classList.add('selected');
+			this.lastSelected = e.target;
 
 			this.setActiveSet(set);
 			this.setActiveFormat(format);
 
 			this.$store.commit('IFRAME_LOADED', false);
+		},
+		openExternal(e, url, set) {
+			if (this.lastSelected)
+				this.lastSelected.classList.remove('selected');
+			e.target.classList.add('selected');
+			this.lastSelected = e.target;
+
+			this.setActiveSet(set);
+      window.open(url);
 		},
 		setActiveFormat(format) {
 			this.$store.commit('UPDATE_ACTIVE_FORMAT', format);
@@ -92,6 +108,7 @@ export default {
 
 .mention-bar {
 	max-width: @maxWidth;
+
 	&.close {
 		margin-right: -@maxWidth + @button-size + 1;
 
@@ -134,6 +151,7 @@ export default {
 
 		.container {
 			margin-bottom: 0.5em;
+
 			.set {
 				display: flex;
 				flex-wrap: wrap;
@@ -145,6 +163,7 @@ export default {
 		}
 	}
 }
+
 .format {
 	display: flex;
 	justify-content: center;
@@ -154,6 +173,9 @@ export default {
 }
 
 li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	padding: 0.5em 0;
 	font-weight: 300;
@@ -168,13 +190,10 @@ li {
 	}
 }
 
-.actions {
-	margin-top: 0.2em;
-}
-
 body.light {
 	.formats {
 		color: lighten(@color-blue, 10%);
+
 		.phase {
 			color: @color-blue-light;
 			background: darken(@color-blue, 5%);
@@ -194,6 +213,7 @@ body.light {
 			background: darken(@color-blue-light, 10%);
 		}
 	}
+
 	.ico {
 		color: @color-blue-light;
 	}

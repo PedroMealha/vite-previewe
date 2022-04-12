@@ -8,12 +8,14 @@
 		<ul class="card">
 			<li v-for="(project, key) in filtered" :key="key" :class="{ selected: project.selected }" @click="updateActiveProject(project)">
 				<div class="client">
-					<p>{{ project.client }}</p>
+					<p>{{ project.name }}</p>
 				</div>
 				<div class="info">
 					<transition name="slide-fade">
 						<div v-if="project.selected">
-							<p class="brand">{{ project.brand }}</p>
+							<p v-for="child in project.children" :key="child">
+								{{ child.name }}
+							</p>
 							<p class="campaign">{{ project.campaign }}</p>
 						</div>
 					</transition>
@@ -123,7 +125,7 @@ export default {
 			overflow: hidden;
 			color: lighten(@color-blue, 40%);
 
-			> div {
+			>div {
 				padding: 0.5em 0;
 			}
 		}
@@ -134,6 +136,7 @@ body.light {
 	.keyword {
 		color: @color-blue;
 	}
+
 	.card li {
 		&:hover {
 			background: fade(@color-blue, 50%);
@@ -142,6 +145,7 @@ body.light {
 		&.selected {
 			background: darken(@color-blue-light, 10%);
 		}
+
 		.info {
 			color: lighten(@color-blue, 10%);
 		}

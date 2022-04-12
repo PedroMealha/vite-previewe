@@ -21,7 +21,7 @@ export default createStore({
 			state.activeSet = set;
 		},
 		SET_PROJECTS(state, projects) {
-			state.projects = projects;
+			state.projects = projects.children;
 		},
 		IFRAME_LOADED(state, status) {
 			state.iframeLoaded = status;
@@ -31,13 +31,16 @@ export default createStore({
 	// updates state
 	// ! call mutations which update state directly
 	actions: {
-		fetchFromDB(context, target) {
+		fetchFromDB(ctx, target) {
 			return fetch(`http://localhost:4000/${target}`)
 				.then(res => res.json())
 				.then(data => {
-					context.commit("SET_PROJECTS", data);
+					ctx.commit("SET_PROJECTS", data);
 				})
 				.catch(err => console.error(err));
+		},
+		fetchFromStage(context) {
+			console.log('fetch stage');
 		}
 	},
 	// equi to computed which access data

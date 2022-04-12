@@ -29,10 +29,11 @@ export default {
 		ViewBar
 	},
 	methods: {
-		...mapActions(["fetchFromDB"])
+		...mapActions(["fetchFromDB", "fetchFromStage"])
 	},
 	created() {
 		this.fetchFromDB('projects');
+		this.fetchFromStage();
 	}
 }
 </script>
@@ -157,16 +158,16 @@ body.light {
 // TRANSITIONS
 .slide-up-enter-active,
 .slide-up-leave-active {
-  transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
 }
 
 .slide-up-enter-from {
-  opacity: 0;
-  transform: translateY(30px);
+	opacity: 0;
+	transform: translateY(30px);
 }
 
 .slide-up-leave-to {
-  opacity: 0;
-  transform: translateY(-30px);
+	opacity: 0;
+	transform: translateY(-30px);
 }
 </style>

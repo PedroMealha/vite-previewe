@@ -1,381 +1,1192 @@
 {
-	"projects": [
-		{
-			"client": "Havana Harbor",
-			"brand": "NPL",
-			"date": "2022-1-14",
-			"campaign": "Prijzenpot",
-			"phase": [
-				{
-					"name": "Awareness",
-					"sets": [
-						{
-							"type": "IAB",
-							"name": "Dynamic Location",
-							"platform": "DCS",
-							"formats": [
-								{
-									"size": "160x600",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Dynamic Location (DCS)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_160x600_"
-								},
-								{
-									"size": "300x250",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Dynamic Location (DCS)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_300x250_"
-								},
-								{
-									"size": "300x600",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Dynamic Location (DCS)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_300x600_"
-								},
-								{
-									"size": "320x240",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Dynamic Location (DCS)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_320x240_"
-								},
-								{
-									"size": "336x280",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Dynamic Location (DCS)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_336x280_"
-								},
-								{
-									"size": "970x250",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Dynamic Location (DCS)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_970x250_"
-								}
-							]
-						},
-						{
-							"type": "IAB",
-							"name": "Prijzenpot",
-							"platform": "DCM",
-							"formats": [
-								{
-									"size": "160x600",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Prijzenpot (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_160x600_"
-								},
-								{
-									"size": "300x250",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Prijzenpot (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_300x250_"
-								},
-								{
-									"size": "300x600",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Prijzenpot (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_300x600_"
-								},
-								{
-									"size": "320x240",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Prijzenpot (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_320x240_"
-								},
-								{
-									"size": "336x280",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Prijzenpot (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_336x280_"
-								},
-								{
-									"size": "970x250",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB Prijzenpot (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_970x250_"
-								}
-							]
-						},
-						{
-							"type": "IAB",
-							"name": "TVC",
-							"platform": "DCM",
-							"formats": [
-								{
-									"size": "160x600",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB TVC (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_160x600_"
-								},
-								{
-									"size": "300x250",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB TVC (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_300x250_"
-								},
-								{
-									"size": "300x600",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB TVC (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_300x600_"
-								},
-								{
-									"size": "320x240",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB TVC (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_320x240_"
-								},
-								{
-									"size": "336x280",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB TVC (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_336x280_"
-								},
-								{
-									"size": "970x250",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Awareness/IAB TVC (DCM)/NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_970x250_"
-								}
-							]
-						}
-					]
-				},
-				{
-					"name": "Retargeting",
-					"sets": [
-						{
-							"type": "IAB",
-							"name": "",
-							"platform": "DCM",
-							"formats": [
-								{
-									"size": "160x600",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Retargeting/IAB/NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_160x600_"
-								},
-								{
-									"size": "300x250",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Retargeting/IAB/NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_300x250_"
-								},
-								{
-									"size": "320x240",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Retargeting/IAB/NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_320x240_"
-								},
-								{
-									"size": "336x280",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-1-14 NPL Prijzenpot (Januari update)/Retargeting/IAB/NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_336x280_"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"client": "Havana Harbor",
-			"brand": "NPL",
-			"date": "2022-3-7",
-			"campaign": "Konings Kanjer",
-			"phase": [
-				{
-					"name": "Awareness",
-					"sets": [
-						{
-							"type": "IAB",
-							"name": "Bedrag",
-							"platform": "DCM",
-							"formats": [
-								{
-									"size": "160x600",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB Bedrag (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_160x600_1.0.0"
-								},
-								{
-									"size": "300x250",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB Bedrag (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_300x250_1.0.0"
-								},
-								{
-									"size": "300x600",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB Bedrag (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_300x600_1.0.0"
-								},
-								{
-									"size": "320x240",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB Bedrag (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_320x240_1.0.0"
-								},
-								{
-									"size": "336x280",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB Bedrag (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_336x280_1.0.0"
-								},
-								{
-									"size": "970x250",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB Bedrag (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_970x250_1.0.0"
-								}
-							]
-						},
-						{
-							"type": "Rich Media",
-							"name": "APTO",
-							"platform": "WO",
-							"upload": "https://previewer.weborama.nl/account/5580/folder/973/creative/4609/adposition/6156",
-							"preview": "https://previewer.weborama.nl/preview/6R49"
-						},
-						{
-							"type": "Rich Media",
-							"name": "ITO",
-							"platform": "WO",
-							"upload": "https://previewer.weborama.nl/accounat/5580/folder/973/creative/4669/adposition/6217",
-							"preview": "https://previewer.weborama.nl/preview/nr94"
-						},
-						{
-							"type": "Rich Media",
-							"name": "Interscroller",
-							"platform": "WO",
-							"upload": "https://clients.weborama.nl/previewer/upload/3610340364/214395",
-							"preview": "https://clients.weborama.nl/files/campaigns2/3610340364/214395/IT_interscroller_201509_index.html"
-						}
-					]
-				},
-				{
-					"name": "Retargeting",
-					"sets": [
-						{
-							"type": "IAB",
-							"name": "Konings Kanjer",
-							"platform": "DCM",
-							"formats": [
-								{
-									"size": "160x600",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB TVC (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_160x600_1.0.0"
-								},
-								{
-									"size": "300x250",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB TVC (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_300x250_1.0.0"
-								},
-								{
-									"size": "300x600",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB TVC (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_300x600_1.0.0"
-								},
-								{
-									"size": "320x240",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB TVC (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_320x240_1.0.0"
-								},
-								{
-									"size": "336x280",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB TVC (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_336x280_1.0.0"
-								},
-								{
-									"size": "970x250",
-									"url": "https://stage.mainbrain.pt/previewData//Havana Harbor/2022/NPL/2022-3-7 NPL KoningsKanjer/Awareness/IABs/IAB TVC (DCM)/NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_970x250_1.0.0"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"client": "Eviso",
-			"brand": "Online.NL",
-			"date": "2021-09-15",
-			"campaign": "Cashback Actie",
-			"phase": [
-				{
-					"name": "Generic",
-					"sets": [
-						{
-							"type": "IAB",
-							"name": "Clean",
-							"platform": "P161",
-							"formats": [
-								{
-									"size": "120x600",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Clean/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Clean_Version_IAB_120x600_1.0.0"
-								},
-								{
-									"size": "160x600",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Clean/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Clean_Version_IAB_160x600_1.0.0"
-								},
-								{
-									"size": "300x100",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Clean/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Clean_Version_IAB_300x100_1.0.0"
-								},
-								{
-									"size": "300x250",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Clean/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Clean_Version_IAB_300x250_1.0.0"
-								},
-								{
-									"size": "300x600",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Clean/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Clean_Version_IAB_300x600_1.0.0"
-								},
-								{
-									"size": "320x240",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Clean/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Clean_Version_IAB_320x240_1.0.0"
-								},
-								{
-									"size": "336x280",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Clean/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Clean_Version_IAB_336x280_1.0.0"
-								},
-								{
-									"size": "728x90",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Clean/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Clean_Version_IAB_728x90_1.0.0"
-								},
-								{
-									"size": "970x250",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Clean/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Clean_Version_IAB_970x250_1.0.0"
-								}
-							]
-						},
-						{
-							"type": "IAB",
-							"name": "Coutdown",
-							"platform": "P161",
-							"formats": [
-								{
-									"size": "120x600",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Countdown/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_DSL_IAB_120x600_1.0.0"
-								},
-								{
-									"size": "160x600",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Countdown/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_DSL_IAB_160x600_1.0.0"
-								},
-								{
-									"size": "300x100",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Countdown/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_DSL_IAB_300x100_1.0.0"
-								},
-								{
-									"size": "300x250",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Countdown/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_DSL_IAB_300x250_1.0.0"
-								},
-								{
-									"size": "300x600",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Countdown/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_DSL_IAB_300x600_1.0.0"
-								},
-								{
-									"size": "320x240",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Countdown/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_DSL_IAB_320x240_1.0.0"
-								},
-								{
-									"size": "336x280",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Countdown/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_DSL_IAB_336x280_1.0.0"
-								},
-								{
-									"size": "728x90",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Countdown/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_DSL_IAB_728x90_1.0.0"
-								},
-								{
-									"size": "970x250",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Countdown/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_DSL_IAB_970x250_1.0.0"
-								}
-							]
-						},
-						{
-							"type": "IAB",
-							"name": "Glasvezel",
-							"platform": "P161",
-							"formats": [
-								{
-									"size": "120x600",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Glasvezel/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Glasvezel_IAB_120x600_1.0.0"
-								},
-								{
-									"size": "160x600",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Glasvezel/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Glasvezel_IAB_160x600_1.0.0"
-								},
-								{
-									"size": "300x100",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Glasvezel/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Glasvezel_IAB_120x600_1.0.0"
-								},
-								{
-									"size": "300x250",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Glasvezel/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Glasvezel_IAB_300x250_1.0.0"
-								},
-								{
-									"size": "300x600",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Glasvezel/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Glasvezel_IAB_300x600_1.0.0"
-								},
-								{
-									"size": "320x240",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Glasvezel/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Glasvezel_IAB_320x240_1.0.0"
-								},
-								{
-									"size": "336x280",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Glasvezel/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Glasvezel_IAB_336x280_1.0.0"
-								},
-								{
-									"size": "728x90",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Glasvezel/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Glasvezel_IAB_728x90_1.0.0"
-								},
-								{
-									"size": "970x250",
-									"url": "https://stage.mainbrain.pt/previewData//Online/2021/2021-09-15 Cashback Actie/IAB/Glasvezel/NL_Eviso_Online.nl_2021-9-15_Cashback_Actie_Display_DSL_70_Glasvezel_IAB_970x250_1.0.0"
-								}
-							]
-						}
-					]
-				}
-			]
-		}
-	]
+	"projects": {
+		"path": "S:\\Sites\\previewData\\Havana Harbor\\2022",
+		"name": "2022",
+		"children": [
+			{
+				"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\Interparking",
+				"name": "Interparking",
+				"children": [
+					{
+						"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\Interparking\\2021-12-15 Emails Rejected & Expired",
+						"name": "2021-12-15 Emails Rejected & Expired",
+						"children": [],
+						"type": "directory"
+					}
+				],
+				"type": "directory"
+			},
+			{
+				"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL",
+				"name": "NPL",
+				"children": [
+					{
+						"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)",
+						"name": "2022-1-14 NPL Prijzenpot (Januari update)",
+						"children": [
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness",
+								"name": "Awareness",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)",
+										"name": "IAB Dynamic Location (DCS)",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_160x600_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_160x600_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_160x600_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_300x250_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_300x250_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_300x250_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_300x600_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_300x600_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_300x600_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_320x240_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_320x240_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_320x240_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_336x280_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_336x280_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_336x280_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_970x250_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_970x250_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Dynamic Location (DCS)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Dynamic_Location_970x250_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)",
+										"name": "IAB Prijzenpot (DCM)",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_160x600_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_160x600_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_160x600_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_300x250_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_300x250_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_300x250_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_300x600_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_300x600_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_300x600_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_320x240_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_320x240_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_320x240_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_336x280_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_336x280_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_336x280_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_970x250_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_970x250_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB Prijzenpot (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_Prijzenpot_970x250_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)",
+										"name": "IAB TVC (DCM)",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_160x600_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_160x600_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_160x600_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_300x250_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_300x250_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_300x250_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_300x600_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_300x600_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_300x600_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_320x240_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_320x240_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_320x240_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_336x280_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_336x280_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_336x280_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_970x250_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_970x250_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Awareness\\IAB TVC (DCM)\\NL_HH_NPL_2022-1-14_Prijzenpot_AW_IAB_TVC_970x250_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							},
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Retargeting",
+								"name": "Retargeting",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Retargeting\\IAB",
+										"name": "IAB",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Retargeting\\IAB\\NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_160x600_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_160x600_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Retargeting\\IAB\\NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_160x600_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Retargeting\\IAB\\NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_300x250_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_300x250_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Retargeting\\IAB\\NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_300x250_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Retargeting\\IAB\\NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_320x240_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_320x240_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Retargeting\\IAB\\NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_320x240_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Retargeting\\IAB\\NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_336x280_",
+												"name": "NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_336x280_",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Prijzenpot (Januari update)\\Retargeting\\IAB\\NL_HH_NPL_2022-1-14_Prijzenpot_RET_IAB_336x280_\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							}
+						],
+						"type": "directory"
+					},
+					{
+						"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)",
+						"name": "2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)",
+						"children": [
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness",
+								"name": "Awareness",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)",
+										"name": "IAB Location (DCS)",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_120x600_1.0.0",
+												"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_120x600_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_120x600_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_160x600_1.0.0",
+												"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_160x600_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_160x600_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_300x250_1.0.0",
+												"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_300x250_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_300x250_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_300x600_1.0.0",
+												"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_300x600_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_300x600_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_320x240_1.0.0",
+												"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_320x240_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_320x240_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_336x280_1.0.0",
+												"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_336x280_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_336x280_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_970x250_1.0.0",
+												"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_970x250_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Awareness\\IAB Location (DCS)\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_AW_Locatie_Vertical_970x250_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							},
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Common",
+								"name": "Common",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Common\\KV",
+										"name": "KV",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Common\\KV\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_CMN_KV_Vertical_1080x1080_1.0.0",
+												"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_CMN_KV_Vertical_1080x1080_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Common\\KV\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_CMN_KV_Vertical_1080x1080_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Common\\KV\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_CMN_KV_Vertical_500x500_1.0.0",
+												"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_CMN_KV_Vertical_500x500_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Common\\KV\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_CMN_KV_Vertical_500x500_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							},
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Retargeting",
+								"name": "Retargeting",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Retargeting\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_120x600_1.0.0",
+										"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_120x600_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Retargeting\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_120x600_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Retargeting\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_160x600_1.0.0",
+										"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_160x600_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Retargeting\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_160x600_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Retargeting\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_300x250_1.0.0",
+										"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_300x250_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Retargeting\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_300x250_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Retargeting\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_320x240_1.0.0",
+										"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_320x240_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Retargeting\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_320x240_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Retargeting\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_336x280_1.0.0",
+										"name": "NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_336x280_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-1-14 NPL Superpostcodeprijs (Oktober 2020 Update)\\Retargeting\\NL_HH_NPL_2022-1-14_Superpostcodeprijs_Ret_IAB_336x280_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							}
+						],
+						"type": "directory"
+					},
+					{
+						"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022",
+						"name": "2022-3-29 NPL Miljoenenjacht Game 2022",
+						"children": [
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness",
+								"name": "Awareness",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_160x600_1.0.0",
+										"name": "NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_160x600_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_160x600_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_300x250_1.0.0",
+										"name": "NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_300x250_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_300x250_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_300x600_1.0.0",
+										"name": "NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_300x600_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_300x600_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_320x240_1.0.0",
+										"name": "NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_320x240_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_320x240_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_336x280_1.0.0",
+										"name": "NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_336x280_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_336x280_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_970x250_1.0.0",
+										"name": "NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_970x250_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Awareness\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_AW_IAB_970x250_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							},
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Common",
+								"name": "Common",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Common\\Key Visual",
+										"name": "Key Visual",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Common\\Key Visual\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_CMN_KV_500x500_1.0.0",
+												"name": "NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_CMN_KV_500x500_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Common\\Key Visual\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_CMN_KV_500x500_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							},
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Retargeting",
+								"name": "Retargeting",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Retargeting\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_160x600_1.0.0",
+										"name": "NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_160x600_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Retargeting\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_160x600_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Retargeting\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_300x250_1.0.0",
+										"name": "NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_300x250_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Retargeting\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_300x250_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Retargeting\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_320x240_1.0.0",
+										"name": "NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_320x240_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Retargeting\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_320x240_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Retargeting\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_336x280_1.0.0",
+										"name": "NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_336x280_1.0.0",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-29 NPL Miljoenenjacht Game 2022\\Retargeting\\NL_HH_NPL_2022-3-29_Miljoenenjacht_Game_RET_IAB_336x280_1.0.0\\index.html",
+												"name": "index.html",
+												"type": "file"
+											}
+										],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							}
+						],
+						"type": "directory"
+					},
+					{
+						"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer",
+						"name": "2022-3-7 NPL KoningsKanjer",
+						"children": [
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness",
+								"name": "Awareness",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\APTO",
+										"name": "APTO",
+										"children": [],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\Expandable Rectangle",
+										"name": "Expandable Rectangle",
+										"children": [],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs",
+										"name": "IABs",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)",
+												"name": "IAB Bedrag (DCM)",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_160x600_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_160x600_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_160x600_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													},
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_300x250_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_300x250_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_300x250_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													},
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_300x600_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_300x600_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_300x600_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													},
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_320x240_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_320x240_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_320x240_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													},
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_336x280_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_336x280_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_336x280_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													},
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_970x250_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_970x250_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB Bedrag (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_Bedrag_970x250_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)",
+												"name": "IAB TVC (DCM)",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_160x600_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_160x600_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_160x600_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													},
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_300x250_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_300x250_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_300x250_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													},
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_300x600_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_300x600_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_300x600_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													},
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_320x240_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_320x240_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_320x240_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													},
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_336x280_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_336x280_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_336x280_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													},
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_970x250_1.0.0",
+														"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_970x250_1.0.0",
+														"children": [
+															{
+																"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\IABs\\IAB TVC (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_AW_IAB_TVC_970x250_1.0.0\\index.html",
+																"name": "index.html",
+																"type": "file"
+															}
+														],
+														"type": "directory"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\Interscroller",
+										"name": "Interscroller",
+										"children": [],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Awareness\\ITO",
+										"name": "ITO",
+										"children": [],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							},
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Common",
+								"name": "Common",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Common\\Counter",
+										"name": "Counter",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Common\\Counter\\NL_Qban_NPL_2022-3-7_KoningsKanjer_Common_Counter_500x500_1.0.0",
+												"name": "NL_Qban_NPL_2022-3-7_KoningsKanjer_Common_Counter_500x500_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Common\\Counter\\NL_Qban_NPL_2022-3-7_KoningsKanjer_Common_Counter_500x500_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Common\\KeyVisual",
+										"name": "KeyVisual",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Common\\KeyVisual\\NL_HH_NPL_2022-3-7_KoningsKanjer_CMN_KV_500x500_1.0.0",
+												"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_CMN_KV_500x500_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Common\\KeyVisual\\NL_HH_NPL_2022-3-7_KoningsKanjer_CMN_KV_500x500_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Common\\Ribbon",
+										"name": "Ribbon",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Common\\Ribbon\\NL_Qban_NPL_2022-3-7_KoningsKanjer_Common_Ribbon_500x500_1.0.0",
+												"name": "NL_Qban_NPL_2022-3-7_KoningsKanjer_Common_Ribbon_500x500_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Common\\Ribbon\\NL_Qban_NPL_2022-3-7_KoningsKanjer_Common_Ribbon_500x500_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							},
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting",
+								"name": "Retargeting",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer (DCM)",
+										"name": "KoningsKanjer (DCM)",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_160x600_1.0.0",
+												"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_160x600_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_160x600_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_300x250_1.0.0",
+												"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_300x250_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_300x250_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_320x240_1.0.0",
+												"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_320x240_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_320x240_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_336x280_1.0.0",
+												"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_336x280_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_336x280_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer v2 (DCM)",
+										"name": "KoningsKanjer v2 (DCM)",
+										"children": [
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer v2 (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_160x600_1.0.0",
+												"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_160x600_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer v2 (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_160x600_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer v2 (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_300x250_1.0.0",
+												"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_300x250_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer v2 (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_300x250_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer v2 (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_320x240_1.0.0",
+												"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_320x240_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer v2 (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_320x240_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											},
+											{
+												"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer v2 (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_336x280_1.0.0",
+												"name": "NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_336x280_1.0.0",
+												"children": [
+													{
+														"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Retargeting\\KoningsKanjer v2 (DCM)\\NL_HH_NPL_2022-3-7_KoningsKanjer_TRY_IAB_KonKanjer_v2_336x280_1.0.0\\index.html",
+														"name": "index.html",
+														"type": "file"
+													}
+												],
+												"type": "directory"
+											}
+										],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							},
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Take-Overs",
+								"name": "Take-Overs",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Take-Overs\\DPG",
+										"name": "DPG",
+										"children": [],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Take-Overs\\Mediahuis HPTO",
+										"name": "Mediahuis HPTO",
+										"children": [],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Take-Overs\\Mediahuis MTO",
+										"name": "Mediahuis MTO",
+										"children": [],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\NPL\\2022-3-7 NPL KoningsKanjer\\Take-Overs\\RTL",
+										"name": "RTL",
+										"children": [],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							}
+						],
+						"type": "directory"
+					}
+				],
+				"type": "directory"
+			},
+			{
+				"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\Unibet",
+				"name": "Unibet",
+				"children": [
+					{
+						"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\Unibet\\2022-3-18 Unibet",
+						"name": "2022-3-18 Unibet",
+						"children": [
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\Unibet\\2022-3-18 Unibet\\Awareness",
+								"name": "Awareness",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\Unibet\\2022-3-18 Unibet\\Awareness\\APTOs",
+										"name": "APTOs",
+										"children": [],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\Unibet\\2022-3-18 Unibet\\Awareness\\HPTO XL",
+										"name": "HPTO XL",
+										"children": [],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\Unibet\\2022-3-18 Unibet\\Awareness\\Interscroller",
+										"name": "Interscroller",
+										"children": [],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							},
+							{
+								"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\Unibet\\2022-3-18 Unibet\\Consideration",
+								"name": "Consideration",
+								"children": [
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\Unibet\\2022-3-18 Unibet\\Consideration\\APTOs",
+										"name": "APTOs",
+										"children": [],
+										"type": "directory"
+									},
+									{
+										"path": "S:\\Sites\\previewData\\Havana Harbor\\2022\\Unibet\\2022-3-18 Unibet\\Consideration\\Mobile Portrait",
+										"name": "Mobile Portrait",
+										"children": [],
+										"type": "directory"
+									}
+								],
+								"type": "directory"
+							}
+						],
+						"type": "directory"
+					}
+				],
+				"type": "directory"
+			}
+		],
+		"type": "directory"
+	}
 }

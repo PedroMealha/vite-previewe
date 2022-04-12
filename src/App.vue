@@ -29,7 +29,7 @@ export default {
 		ViewBar
 	},
 	methods: {
-		...mapActions(["fetchFromDB"]),
+		...mapActions(["fetchFromDB"])
 	},
 	created() {
 		this.fetchFromDB('projects');
@@ -125,17 +125,6 @@ ul {
 	margin: 0;
 }
 
-.ico {
-	display: inline-block;
-	padding: 0 0.25em;
-	font-family: "Material Icons";
-	cursor: pointer;
-
-	&:hover {
-		color: lighten(@color-blue, 40%);
-	}
-}
-
 .border {
 	position: absolute;
 	top: 0;
@@ -143,6 +132,10 @@ ul {
 	bottom: 0;
 	right: 0;
 	pointer-events: none;
+}
+
+.ico {
+	font-family: "Material Icons";
 }
 
 body.light {
@@ -158,5 +151,22 @@ body.light {
 			color: @color-grey-dark;
 		}
 	}
+}
+
+
+// TRANSITIONS
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.25s ease-out;
+}
+
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
 }
 </style>

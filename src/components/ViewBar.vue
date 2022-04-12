@@ -3,7 +3,7 @@
 		<div class="loading">
 			<div class="ico" :class="{ on: !iframeLoaded }" :style="{ opacity: iframeLoaded ? 0 : 1 }">autorenew</div>
 		</div>
-		<iframe :src="activeFormat.url" frameborder="0" :style="{ opacity: iframeLoaded ? 1 : 0 }" @load="loadIframe"></iframe>
+		<iframe :src="activeFormat.url" frameborder="0" :style="{ opacity: iframeLoaded ? 1 : 0 }" @load="loadIframe($event)"></iframe>
 		<div class="border"></div>
 		<div class="format label">
 			{{ activeFormat.size }}
@@ -25,7 +25,7 @@ export default {
 		Actions
 	},
 	methods: {
-		loadIframe() {
+		loadIframe(e) {
 			this.$store.commit('IFRAME_LOADED', true);
 		}
 	},
@@ -56,6 +56,17 @@ export default {
 	display: flex;
 	margin-top: 100px;
 	position: relative;
+
+	.actions {
+		margin-left: 0.5em;
+
+		&:deep(.ico) {
+
+			&:hover {
+				background: darken(@color-blue, 10%);
+			}
+		}
+	}
 
 	.loading {
 		position: absolute;
@@ -100,13 +111,13 @@ iframe {
 	align-items: center;
 	justify-content: center;
 	top: @border-size;
-	padding: 0.5em;
-	border: @border-size solid @color-blue;
+	padding-left: .5em;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	background: lighten(@color-blue, 10%);
 	color: @color-blue-light;
 	transform: translateY(-100%);
+	overflow: hidden;
 }
 
 .richmedia {

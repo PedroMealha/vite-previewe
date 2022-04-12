@@ -50,14 +50,17 @@ export default {
 
 .search-bar {
 	max-width: @maxWidth;
+
 	&.close {
 		margin-left: -@maxWidth + @button-size + 1;
 
-		#search, .results {
+		#search,
+		.results {
 			opacity: 0;
 		}
 	}
 }
+
 .ico {
 	color: lighten(@color-blue, 40%);
 }
@@ -76,6 +79,10 @@ export default {
 	width: 100%;
 	height: 100px;
 	border-bottom: 1px solid @color-blue;
+
+	.ico {
+		padding: 0 0.5em;
+	}
 }
 
 .search-container {

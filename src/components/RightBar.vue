@@ -14,16 +14,22 @@
 						<li v-for="format in set.formats" :key="format" @click="handleClick($event, format, set)">{{ format.size }}</li>
 					</ul>
 				</div>
-				<div class="container" v-else>
+				<div class="container external" v-else>
 					<div class="set">{{ setName(set) }}</div>
 					<ul class="format">
-						<li @click="openExternal($event, set.upload, set)">
-							Upload
-							<span class="ico">link</span>
+						<li>
+							<div>Upload</div>&nbsp;
+							<div class="copy-link">
+								<div class="ico" @click="copyExternalUrl(set.upload)">link</div>
+								<div class="ico" @click="openExternalUrl(set.upload)">open_in_new</div>
+							</div>
 						</li>
-						<li @click="openExternal($event, set.preview, set)">
-							Preview
-							<span class="ico">link</span>
+						<li>
+							<div>Preview</div>&nbsp;
+							<div class="copy-link">
+								<div class="ico" @click="copyExternalUrl(set.preview)">link</div>
+								<div class="ico" @click="openExternalUrl(set.preview)">open_in_new</div>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -56,6 +62,9 @@ export default {
 			this.isClosed = !this.isClosed;
 		},
 		handleClick(e, format, set) {
+			// if (this.lastSelected && this.lastSelected === e.target)
+			// 	return;
+
 			if (this.lastSelected)
 				this.lastSelected.classList.remove('selected');
 			e.target.classList.add('selected');
@@ -66,14 +75,11 @@ export default {
 
 			this.$store.commit('IFRAME_LOADED', false);
 		},
-		openExternal(e, url, set) {
-			if (this.lastSelected)
-				this.lastSelected.classList.remove('selected');
-			e.target.classList.add('selected');
-			this.lastSelected = e.target;
-
-			this.setActiveSet(set);
-      window.open(url);
+		copyExternalUrl(url) {
+			navigator.clipboard.writeText(url);
+		},
+		openExternalUrl(url) {
+			window.open(url);
 		},
 		setActiveFormat(format) {
 			this.$store.commit('UPDATE_ACTIVE_FORMAT', format);
@@ -82,10 +88,10 @@ export default {
 			this.$store.commit('UPDATE_ACTIVE_SET', set);
 		},
 		phaseName(phase) {
-			return phase.name != '' ? phase.name : `- Unnamed Phase -`;
+			return phase.name != '' ? phase.name : `(Unnamed Phase)`;
 		},
 		setName(set) {
-			return set.name != '' ? `${set.platform} ${set.name}` : `${set.platform} - Unnamed Set -`;
+			return set.name != '' ? `${set.platform} ${set.name}` : `${set.platform} (Unnamed Set)`;
 		}
 	},
 	computed: {
@@ -139,26 +145,40 @@ export default {
 		width: 100%;
 		background: lighten(@color-blue, 30%);
 		color: @color-blue-light;
-		padding: 0.5em 0;
+		padding: 1em 0;
 		font-weight: 700;
-		font-size: 1.1em;
+		font-size: 1em;
 	}
 
 	.sets {
 		width: 100%;
-		padding: 0.5em 0;
 		color: @color-blue-light;
 
 		.container {
-			margin-bottom: 0.5em;
+			margin-bottom: .5em;
+
+			&.external li {
+				padding: 0;
+			}
 
 			.set {
 				display: flex;
 				flex-wrap: wrap;
 				align-items: center;
 				justify-content: center;
-				padding: 0.5em;
 				background: lighten(@color-blue, 10%);
+				padding: .5em 0;
+
+				.actions {
+					margin-left: 0.5em;
+
+					&:deep(.ico) {
+
+						&:hover {
+							background: darken(@color-blue, 10%);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -187,6 +207,25 @@ li {
 
 	&:hover {
 		background: fade(@color-blue, 50%);
+	}
+}
+
+.copy-link {
+	display: flex;
+	justify-content: center;
+	margin-left: 0.25em;
+
+	.ico {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 2em;
+		height: 2em;
+		cursor: pointer;
+
+		&:hover {
+			background: @color-grey-dark;
+		}
 	}
 }
 

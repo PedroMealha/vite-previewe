@@ -94,7 +94,6 @@ export default {
 		align-items: center;
 		flex-direction: column;
 		margin: 0.5em 0;
-		border: 1px solid @color-blue;
 		text-transform: capitalize;
 		cursor: pointer;
 

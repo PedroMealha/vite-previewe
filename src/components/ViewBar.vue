@@ -1,3 +1,7 @@
+<script setup>
+import Actions from './Actions.vue'
+</script>
+
 <template>
 	<div class="focus" v-if="activeFormat && activeSet.type == 'IAB'" :style="{ width: size.w + 'px', height: size.h + 'px' }">
 		<div class="loading">
@@ -8,7 +12,7 @@
 		<div class="format label">
 			{{ activeFormat.size }}
 			<div class="actions">
-				<Actions />
+				<component :is="Actions" />
 			</div>
 		</div>
 	</div>
@@ -16,14 +20,10 @@
 </template>
 
 <script>
-import Actions from './Actions.vue'
 import { mapState } from 'vuex'
 
 export default {
 	name: "ViewBar",
-	components: {
-		Actions
-	},
 	methods: {
 		loadIframe(e) {
 			this.$store.commit('IFRAME_LOADED', true);

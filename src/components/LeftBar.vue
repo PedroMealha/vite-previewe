@@ -1,3 +1,8 @@
+<script setup>
+import SearchResults from './SearchResults.vue'
+import Button from './Button.vue'
+</script>
+
 <template>
 	<div class="search-bar" :class="{ close: isClosed }">
 		<div id="search">
@@ -6,22 +11,15 @@
 				<input type="search" placeholder="Search client / project..." v-model="keyword" />
 			</div>
 		</div>
-		<search-results :keyword="keyword" />
+		<component :is="SearchResults" :keyword="keyword" />
 
-		<Button id="close" text="&times;" @click="showBar" />
+		<component :is="Button" id="close" text="&times;" @click="showBar" />
 	</div>
 </template>
 
 <script>
-import SearchResults from './SearchResults.vue'
-import Button from './Button.vue'
-
 export default {
 	name: 'LeftBar',
-	components: {
-		Button,
-		SearchResults,
-	},
 	data() {
 		return {
 			keyword: '',

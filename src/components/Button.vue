@@ -2,7 +2,6 @@
 	<button>{{ text }}</button>
 </template>
 
-
 <script>
 export default {
 	props: {

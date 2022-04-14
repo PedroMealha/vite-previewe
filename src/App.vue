@@ -1,33 +1,28 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-</script>
 
-<template>
-	<div class="master-container">
-		<left-bar class="side-container left" />
-		<div class="center-content">
-			<top-bar />
-			<view-bar />
-		</div>
-		<right-bar class="side-container right" />
-	</div>
-</template>
-
-<script>
 import LeftBar from './components/LeftBar.vue'
 import RightBar from './components/RightBar.vue'
 import TopBar from './components/TopBar.vue'
 import ViewBar from './components/ViewBar.vue'
+</script>
+
+<template>
+	<div class="master-container">
+		<component :is="LeftBar" class="side-container left" />
+		<div class="center-content">
+			<component :is="TopBar" />
+			<component :is="ViewBar" />
+		</div>
+		<component :is="RightBar" class="side-container right" />
+	</div>
+</template>
+
+<script>
 import { mapActions } from "vuex";
 
 export default {
-	components: {
-		LeftBar,
-		RightBar,
-		TopBar,
-		ViewBar
-	},
 	methods: {
 		...mapActions(["fetchFromDB"])
 	},
@@ -157,16 +152,16 @@ body.light {
 // TRANSITIONS
 .slide-up-enter-active,
 .slide-up-leave-active {
-  transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
 }
 
 .slide-up-enter-from {
-  opacity: 0;
-  transform: translateY(30px);
+	opacity: 0;
+	transform: translateY(30px);
 }
 
 .slide-up-leave-to {
-  opacity: 0;
-  transform: translateY(-30px);
+	opacity: 0;
+	transform: translateY(-30px);
 }
 </style>

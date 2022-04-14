@@ -1,3 +1,8 @@
+<script setup>
+import Button from './Button.vue'
+import Actions from './Actions.vue'
+</script>
+
 <template>
 	<div class="mention-bar" :class="{ close: isClosed }">
 		<div class="formats" v-for="phase in activeProject.phase" :key="phase">
@@ -41,16 +46,10 @@
 </template>
 
 <script>
-import Button from './Button.vue'
-import Actions from './Actions.vue'
 import { mapState } from 'vuex'
 
 export default {
 	name: 'RightBar',
-	components: {
-		Button,
-		Actions
-	},
 	data() {
 		return {
 			isClosed: false,

@@ -1,24 +1,24 @@
 <template>
 	<!-- <div class="results" v-if="projects && keyword != ''"> -->
-	<div class="results" v-if="projects && keyword !== ''">
+	<div class="results" v-if="projects">
 		<p v-if="filtered.length == 0">
 			No results for
 			<span class="keyword">{{ keyword }}</span>
 		</p>
 		<ul class="card">
-			<li v-for="(project, key) in filtered" :key="key" :class="{ selected: project.selected }" @click="updateActiveProject(project)">
-				<div class="client">
-					<p>{{ project.name }}</p>
+			<li v-for="project in projects" :key="project" :class="{ selected: project.selected }" @click="expandFolder(project)">
+				<div v-if="project.children.length">
+					<strong>
+						{{ project.name }}
+					</strong>
+					<div v-for="child in project.children" :key="child">
+						{{ child.name }}
+					</div>
 				</div>
-				<div class="info">
-					<transition name="slide-fade">
-						<div v-if="project.selected">
-							<p v-for="child in project.children" :key="child">
-								{{ child.name }}
-							</p>
-							<p class="campaign">{{ project.campaign }}</p>
-						</div>
-					</transition>
+				<div v-else>
+					<strong>
+						{{ project.name }}
+					</strong>
 				</div>
 			</li>
 		</ul>
@@ -42,6 +42,14 @@ export default {
 		}
 	},
 	methods: {
+		expandFolder(project) {
+			this.updateActiveProject(project);
+			let i = 0;
+			while (i < project.children.length) {
+				console.log(project);
+				i++;
+			}
+		},
 		updateActiveProject(project) {
 			if (project == this.lastProject) return;
 
@@ -95,16 +103,20 @@ export default {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		margin: 0.5em 0;
+		// margin: 0.5em 0;
 		text-transform: capitalize;
 		cursor: pointer;
 
+		div {
+			padding: .5em;
+		}
+
 		&:hover {
-			background: fade(@color-blue, 50%);
+			background: lighten(@color-blue, 5%);
 		}
 
 		&.selected {
-			background: fade(@color-blue, 50%);
+			background: lighten(@color-blue, 10%);
 		}
 
 		.client {

@@ -15,6 +15,7 @@
 						<div v-if="project.selected">
 							<p class="brand">{{ project.brand }}</p>
 							<p class="campaign">{{ project.campaign }}</p>
+							<p class="date">{{ project.date }}</p>
 						</div>
 					</transition>
 				</div>

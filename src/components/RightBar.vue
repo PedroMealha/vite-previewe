@@ -1,41 +1,8 @@
 <template>
 	<div class="mention-bar" :class="{ close: isClosed }">
-		<div class="formats" v-for="phase in activeProject.phase" :key="phase">
-			<div class="phase">{{ phaseName(phase) }}</div>
-			<div class="sets" v-for="set in phase.sets" :key="set">
-				<div class="container" v-if="set.type === 'IAB'">
-					<div class="set">
-						{{ setName(set) }}
-						<div class="actions">
-							<Actions />
-						</div>
-					</div>
-					<ul class="format">
-						<li v-for="format in set.formats" :key="format" @click="handleClick($event, format, set)">{{ format.size }}</li>
-					</ul>
-				</div>
-				<div class="container external" v-else>
-					<div class="set">{{ setName(set) }}</div>
-					<ul class="format">
-						<li>
-							<div>Upload</div>&nbsp;
-							<div class="copy-link">
-								<div class="ico" @click="copyExternalUrl(set.upload)">link</div>
-								<div class="ico" @click="openExternalUrl(set.upload)">open_in_new</div>
-							</div>
-						</li>
-						<li>
-							<div>Preview</div>&nbsp;
-							<div class="copy-link">
-								<div class="ico" @click="copyExternalUrl(set.preview)">link</div>
-								<div class="ico" @click="openExternalUrl(set.preview)">open_in_new</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
+		<ul class="formats" v-for="project in activeProject" :key="project">
+			<tree :tree-data="project"></tree>
+		</ul>
 		<Button id="close" text="&times;" @click="showBar" />
 	</div>
 </template>
@@ -43,13 +10,15 @@
 <script>
 import Button from './Button.vue'
 import Actions from './Actions.vue'
+import Tree from "./Tree.vue";
 import { mapState } from 'vuex'
 
 export default {
 	name: 'RightBar',
 	components: {
 		Button,
-		Actions
+		Actions,
+		Tree
 	},
 	data() {
 		return {
@@ -140,6 +109,7 @@ export default {
 	flex-direction: column;
 	width: 100%;
 	color: lighten(@color-blue, 40%);
+	margin-bottom: 1em;
 
 	.phase {
 		width: 100%;

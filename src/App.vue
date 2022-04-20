@@ -29,11 +29,10 @@ export default {
 		ViewBar
 	},
 	methods: {
-		...mapActions(["fetchFromDB", "fetchFromStage"])
+		...mapActions(["fetchFromDB"])
 	},
 	created() {
 		this.fetchFromDB('projects');
-		this.fetchFromStage();
 	}
 }
 </script>

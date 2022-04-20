@@ -5,21 +5,12 @@
 			No results for
 			<span class="keyword">{{ keyword }}</span>
 		</p>
-		<ul class="card">
-			<li v-for="project in projects" :key="project" :class="{ selected: project.selected }" @click="expandFolder(project)">
-				<div v-if="project.children.length">
-					<strong>
-						{{ project.name }}
-					</strong>
-					<div v-for="child in project.children" :key="child">
-						{{ child.name }}
-					</div>
-				</div>
-				<div v-else>
-					<strong>
-						{{ project.name }}
-					</strong>
-				</div>
+		<ul class="card" v-for="client in projects" :key="client">
+			<div class="client-name">
+				{{ client.name }}
+			</div>
+			<li v-for="project in client.children" :key="project" :class="{ selected: project.selected }" @click="updateActiveProject(project)">
+				{{ project.name }}
 			</li>
 		</ul>
 	</div>
@@ -42,14 +33,6 @@ export default {
 		}
 	},
 	methods: {
-		expandFolder(project) {
-			this.updateActiveProject(project);
-			let i = 0;
-			while (i < project.children.length) {
-				console.log(project);
-				i++;
-			}
-		},
 		updateActiveProject(project) {
 			if (project == this.lastProject) return;
 
@@ -57,7 +40,7 @@ export default {
 			project.selected = true;
 			this.lastProject = project;
 
-			this.$store.commit('UPDATE_ACTIVE_PROJECT', project);
+			this.$store.commit('UPDATE_ACTIVE_PROJECT', project.children);
 		}
 	},
 	computed: {
@@ -98,6 +81,12 @@ export default {
 	list-style: none;
 	padding: 0.5em 1em;
 
+	.client-name {
+		background: lighten(@color-blue, 10%);
+		color: @color-blue-light;
+		padding: .5em;
+	}
+
 	li {
 		display: flex;
 		justify-content: center;
@@ -106,25 +95,22 @@ export default {
 		// margin: 0.5em 0;
 		text-transform: capitalize;
 		cursor: pointer;
-
-		div {
-			padding: .5em;
-		}
+		padding: .5em;
 
 		&:hover {
-			background: lighten(@color-blue, 5%);
+			background: @color-blue;
 		}
 
 		&.selected {
-			background: lighten(@color-blue, 10%);
+			background: @color-blue;
 		}
 
 		.client {
 			display: flex;
 			justify-content: center;
-			background: lighten(@color-blue, 10%);
 			width: 100%;
 			padding: 0.5em 0;
+			background: lighten(@color-blue, 10%);
 			color: @color-blue-light;
 		}
 

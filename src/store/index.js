@@ -38,9 +38,6 @@ export default createStore({
 					ctx.commit("SET_PROJECTS", data);
 				})
 				.catch(err => console.error(err));
-		},
-		fetchFromStage(context) {
-			console.log('fetch stage');
 		}
 	},
 	// equi to computed which access data

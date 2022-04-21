@@ -119,12 +119,6 @@ input[type="text"] {
 	padding: 0px 10px;
 }
 
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
 .border {
 	position: absolute;
 	top: 0;
@@ -149,6 +143,42 @@ body.light {
 
 		&::placeholder {
 			color: @color-grey-dark;
+		}
+	}
+}
+
+ul {
+	list-style: none;
+	padding: 0.5em 1em;
+	margin: 0;
+
+	.name {
+		background: lighten(@color-blue, 10%);
+		color: @color-blue-light;
+		padding: .5em;
+	}
+
+	li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		// margin: 0.5em 0;
+		text-transform: capitalize;
+		cursor: pointer;
+		padding: .5em;
+
+		&:hover {
+			background: @color-blue;
+		}
+
+		&.selected {
+			background: @color-blue;
+		}
+
+		p {
+			margin: 0;
+			padding: 0.25em 0;
 		}
 	}
 }

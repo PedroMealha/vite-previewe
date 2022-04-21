@@ -5,8 +5,8 @@
 			No results for
 			<span class="keyword">{{ keyword }}</span>
 		</p>
-		<ul class="card" v-for="client in projects" :key="client">
-			<div class="client-name">
+		<ul v-for="client in projects" :key="client">
+			<div class="name">
 				{{ client.name }}
 			</div>
 			<li v-for="project in client.children" :key="project" :class="{ selected: project.selected }" @click="updateActiveProject(project)">
@@ -75,59 +75,6 @@ export default {
 .keyword {
 	color: lighten(@color-blue, 60%);
 	font-weight: 700;
-}
-
-.card {
-	list-style: none;
-	padding: 0.5em 1em;
-
-	.client-name {
-		background: lighten(@color-blue, 10%);
-		color: @color-blue-light;
-		padding: .5em;
-	}
-
-	li {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		// margin: 0.5em 0;
-		text-transform: capitalize;
-		cursor: pointer;
-		padding: .5em;
-
-		&:hover {
-			background: @color-blue;
-		}
-
-		&.selected {
-			background: @color-blue;
-		}
-
-		.client {
-			display: flex;
-			justify-content: center;
-			width: 100%;
-			padding: 0.5em 0;
-			background: lighten(@color-blue, 10%);
-			color: @color-blue-light;
-		}
-
-		p {
-			margin: 0;
-			padding: 0.25em 0;
-		}
-
-		.info {
-			overflow: hidden;
-			color: lighten(@color-blue, 40%);
-
-			>div {
-				padding: 0.5em 0;
-			}
-		}
-	}
 }
 
 body.light {

@@ -1,9 +1,5 @@
 <template>
-	<div class="tree">
-		<ul class="tree-list">
-			<node-tree :node="treeData"></node-tree>
-		</ul>
-	</div>
+	<node-tree :node="treeData"></node-tree>
 </template>
 
 <script>

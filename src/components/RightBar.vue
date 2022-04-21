@@ -1,8 +1,10 @@
 <template>
 	<div class="mention-bar" :class="{ close: isClosed }">
-		<ul class="formats" v-for="project in activeProject" :key="project">
-			<tree :tree-data="project"></tree>
-		</ul>
+		<div class="results">
+			<ul v-for="project in activeProject" :key="project">
+				<tree :tree-data="project"></tree>
+			</ul>
+		</div>
 		<Button id="close" text="&times;" @click="showBar" />
 	</div>
 </template>
@@ -84,12 +86,13 @@ export default {
 .mention-bar {
 	max-width: @maxWidth;
 
+	.results {
+		width: 100%;
+		padding: 0 0.5em;
+	}
+
 	&.close {
 		margin-right: -@maxWidth + @button-size + 1;
-
-		.formats {
-			opacity: 0;
-		}
 	}
 }
 
@@ -100,103 +103,6 @@ export default {
 	width: @button-size;
 	height: @button-size;
 	font-size: 1.5em;
-}
-
-.formats {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	color: lighten(@color-blue, 40%);
-	margin-bottom: 1em;
-
-	.phase {
-		width: 100%;
-		background: lighten(@color-blue, 30%);
-		color: @color-blue-light;
-		padding: 1em 0;
-		font-weight: 700;
-		font-size: 1em;
-	}
-
-	.sets {
-		width: 100%;
-		color: @color-blue-light;
-
-		.container {
-			margin-bottom: .5em;
-
-			&.external li {
-				padding: 0;
-			}
-
-			.set {
-				display: flex;
-				flex-wrap: wrap;
-				align-items: center;
-				justify-content: center;
-				background: lighten(@color-blue, 10%);
-				padding: .5em 0;
-
-				.actions {
-					margin-left: 0.5em;
-
-					&:deep(.ico) {
-
-						&:hover {
-							background: darken(@color-blue, 10%);
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-.format {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	color: lighten(@color-blue, 40%);
-}
-
-li {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	padding: 0.5em 0;
-	font-weight: 300;
-	cursor: pointer;
-
-	&.selected {
-		background: fade(@color-blue, 50%);
-	}
-
-	&:hover {
-		background: fade(@color-blue, 50%);
-	}
-}
-
-.copy-link {
-	display: flex;
-	justify-content: center;
-	margin-left: 0.25em;
-
-	.ico {
-		display: inline-flex;
-		justify-content: center;
-		align-items: center;
-		width: 2em;
-		height: 2em;
-		cursor: pointer;
-
-		&:hover {
-			background: @color-grey-dark;
-		}
-	}
 }
 
 body.light {

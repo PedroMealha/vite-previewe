@@ -7,15 +7,14 @@
 		</p>
 		<ul class="card">
 			<li v-for="(project, key) in filtered" :key="key" :class="{ selected: project.selected }" @click="updateActiveProject(project)">
-				<div class="client">
+				<div class="name">
 					<p>{{ project.client }}</p>
 				</div>
-				<div class="info">
-					<transition name="slide-fade">
+				<div class="details">
+					<transition name="slide-fade" mode="in-out">
 						<div v-if="project.selected">
-							<p class="brand">{{ project.brand }}</p>
-							<p class="campaign">{{ project.campaign }}</p>
-							<p class="date">{{ project.date }}</p>
+							<p>{{ project.brand }}</p>
+							<p>{{ project.date }} {{ project.campaign }}</p>
 						</div>
 					</transition>
 				</div>
@@ -85,7 +84,7 @@ export default {
 	font-weight: 700;
 }
 
-.card {
+ul {
 	list-style: none;
 	padding: 0.5em 1em;
 
@@ -106,7 +105,7 @@ export default {
 			background: fade(@color-blue, 50%);
 		}
 
-		.client {
+		.name {
 			display: flex;
 			justify-content: center;
 			background: lighten(@color-blue, 10%);
@@ -120,11 +119,11 @@ export default {
 			padding: 0.25em 0;
 		}
 
-		.info {
+		.details {
 			overflow: hidden;
 			color: lighten(@color-blue, 40%);
 
-			> div {
+			>div {
 				padding: 0.5em 0;
 			}
 		}
@@ -135,7 +134,8 @@ body.light {
 	.keyword {
 		color: @color-blue;
 	}
-	.card li {
+
+	ul li {
 		&:hover {
 			background: fade(@color-blue, 50%);
 		}
@@ -143,7 +143,8 @@ body.light {
 		&.selected {
 			background: darken(@color-blue-light, 10%);
 		}
-		.info {
+
+		.details {
 			color: lighten(@color-blue, 10%);
 		}
 	}

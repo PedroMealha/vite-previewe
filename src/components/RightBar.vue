@@ -7,6 +7,7 @@ import Actions from './Actions.vue'
 	<div class="mention-bar" :class="{ close: isClosed }">
 		<div class="formats" v-for="phase in activeProject.phase" :key="phase">
 			<div class="phase">{{ phaseName(phase) }}</div>
+
 			<div class="sets" v-for="set in phase.sets" :key="set">
 				<div class="container" v-if="set.type === 'IAB'">
 					<div class="set">
@@ -19,6 +20,7 @@ import Actions from './Actions.vue'
 						<li v-for="format in set.formats" :key="format" @click="handleClick($event, format, set)">{{ format.size }}</li>
 					</ul>
 				</div>
+
 				<div class="container external" v-else>
 					<div class="set">{{ setName(set) }}</div>
 					<ul class="format">
@@ -38,6 +40,7 @@ import Actions from './Actions.vue'
 						</li>
 					</ul>
 				</div>
+				
 			</div>
 		</div>
 

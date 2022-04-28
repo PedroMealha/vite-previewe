@@ -11,9 +11,9 @@ import Button from './Button.vue'
 				<input type="search" placeholder="Search client / project..." v-model="keyword" />
 			</div>
 		</div>
-		<component :is="SearchResults" :keyword="keyword" />
+		<search-results :keyword="keyword" />
 
-		<component :is="Button" id="close" text="&times;" @click="showBar" />
+		<Button id="close" text="&times;" @click="showBar" />
 	</div>
 </template>
 

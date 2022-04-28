@@ -10,17 +10,18 @@ import ViewBar from './components/ViewBar.vue'
 
 <template>
 	<div class="master-container">
-		<component :is="LeftBar" class="side-container left" />
+		<left-bar class="side-container left" />
 		<div class="center-content">
-			<component :is="TopBar" />
-			<component :is="ViewBar" />
+			<top-bar />
+			<view-bar />
 		</div>
-		<component :is="RightBar" class="side-container right" />
+		<right-bar class="side-container right" />
 	</div>
 </template>
 
 <script>
 import { mapActions } from "vuex";
+
 
 export default {
 	methods: {
@@ -146,22 +147,5 @@ body.light {
 			color: @color-grey-dark;
 		}
 	}
-}
-
-
-// TRANSITIONS
-.slide-up-enter-active,
-.slide-up-leave-active {
-	transition: all 0.25s ease-out;
-}
-
-.slide-up-enter-from {
-	opacity: 0;
-	transform: translateY(30px);
-}
-
-.slide-up-leave-to {
-	opacity: 0;
-	transform: translateY(-30px);
 }
 </style>

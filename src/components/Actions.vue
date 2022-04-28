@@ -25,8 +25,8 @@ export default {
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		width: 2em;
 		height: 2em;
+		padding: 0 .5em;
 		cursor: pointer;
 
 		&:hover {

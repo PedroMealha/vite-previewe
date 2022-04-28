@@ -12,7 +12,7 @@ import Actions from './Actions.vue'
 		<div class="format label">
 			{{ activeFormat.size }}
 			<div class="actions">
-				<component :is="Actions" />
+				<Actions />
 			</div>
 		</div>
 	</div>
@@ -58,7 +58,7 @@ export default {
 	position: relative;
 
 	.actions {
-		margin-left: 0.5em;
+		// margin-left: 0.5em;
 
 		&:deep(.ico) {
 
@@ -111,13 +111,13 @@ iframe {
 	align-items: center;
 	justify-content: center;
 	top: @border-size;
-	padding-left: .5em;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	background: lighten(@color-blue, 10%);
 	color: @color-blue-light;
 	transform: translateY(-100%);
 	overflow: hidden;
+	padding: 0.5em .5em .5em 1em;
 }
 
 .richmedia {
